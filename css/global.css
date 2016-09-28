@@ -397,7 +397,7 @@ i.fa:hover {
   padding-bottom: 30px;
 }
 .add {
-  background-color: #9CC931;
+  background-color: #B7B7B7;
   width: 14px;
   height: 14px;
   border-radius: 2px;
@@ -415,14 +415,14 @@ i.fa:hover {
   padding: 2px 4px;
 }
 .add-text {
-  margin-left: 28px;
+  margin-left: 8px;
   margin-top: 2px;
   font-size: 12px;
   color: #333333;
   font-weight: 500;
 }
 .added {
-  background-color: #B7B7B7;
+  background-color: #9CC931;
   width: 14px;
   height: 14px;
   border-radius: 2px;
@@ -430,15 +430,24 @@ i.fa:hover {
   padding-bottom: 1px;
 }
 .added-text {
-  margin-left: 28px;
+  margin-left: 8px;
   margin-top: 2px;
   font-size: 12px;
   color: rgba(51,51,51,0.38);
   font-weight: 500;
 }
+.check-mark {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  line-height: 14px;
+  padding: 2px 4px;
+}
 .stars {
   display: table;
-  margin-top: -15px;
   min-height: 17px;
 }
 .star-icon {
