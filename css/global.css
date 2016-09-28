@@ -284,13 +284,19 @@ i.fa:hover {
   padding-top: 100px;
   padding-bottom: 120px;
 }
-.card {
+.card-container {
   text-align: center;
 }
-.container-card {
+.card:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, .1);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
+.card {
   position: relative;
   min-width: 290px;
-  max-width: 320px;
+  height: 400px;
   margin-bottom: 60px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -302,13 +308,14 @@ i.fa:hover {
   text-decoration: none;
 }
 .inner-card-wrapper {
-  margin: 20px 30px;
+  margin: 0px 30px;
   min-height: 60px;
   text-align: left;
   position: relative;
 }
-.crew-name-header {
+.crew-name-container {
   min-height: 122px;
+  padding-top: 20px;
 }
 .location {
   font-size: 12px;
@@ -318,12 +325,16 @@ i.fa:hover {
   font-size: 22px;
   color: #1DBFB4;
 }
+.crew-image-container {
+  min-height: 122px;
+  padding-top: 20px;
+}
 .crew-image {
   width: 90px;
   height: 90px;
   position: absolute;
   right: -20px;
-  top: 13px;
+  top: 23px;
   background-color: yellow;
   border-radius: 100%;
 }
@@ -339,17 +350,22 @@ i.fa:hover {
   margin-bottom: 15px;
 }
 .crew-bio {
-  clear: both;
+  position: absolute;
+  top: 10px;
   display: block;
   font-family: 'Neue Hass', sans-serif;
   font-weight: 400;
   color: #464646;
   font-size: 12px;
   line-height: 20px;
-  padding-bottom: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 100px;
 }
 .skill-container {
   width: 250px;
+  position: absolute;
+  top: 135px;
 }
 .crew-skills {
   display: inline-block;
@@ -393,8 +409,8 @@ i.fa:hover {
   display: inline-block;
 }
 .follow {
-  margin-top: 25px; 
-  padding-bottom: 30px;
+  position: absolute;
+  top: 350px;
 }
 .add {
   background-color: #B7B7B7;
