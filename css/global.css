@@ -157,7 +157,6 @@ ul.nav.navbar-nav.navbar-right {
   background-color: transparent; 
 }
 .main-nav {
-  height: 80px;
   padding: 15px;
 }
 .logo {
@@ -225,7 +224,7 @@ i.fa:hover {
 .unread-indicator {
   position: absolute;
   top: 7px;
-  right: 105px;
+  right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -242,7 +241,7 @@ i.fa:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #3b6085;
+  border: 1px solid transparent;
   border-radius: 6px;
   background-color: #ef6166;
 }
@@ -477,30 +476,15 @@ i.fa:hover {
 
 /*----- Responsive Media Queries -----*/
 @media (min-width: 360px) {
-  .nav-avatar {
-    right: 131px
-  }
-  .unread-indicator {
-    right: 125px;
-  }
+  
 
 }
 @media (min-width: 375px) {
-  .nav-avatar {
-    right: 139px
-  }
-  .unread-indicator {
-    right: 134px;
-  }
+  
 }
 
 @media (min-width: 400px) {
-  .nav-avatar {
-    right: 159px
-  }
-  .unread-indicator {
-    right: 150px;
-  }
+  
 }
 
 @media (min-width: 566px) {
@@ -508,9 +492,12 @@ i.fa:hover {
 }
 
 @media (min-width: 768px) {
+  .main-nav {
+    height: 80px;
+  }
   .unread-indicator {
-    top: 12px;
-    right: 10px;
+    top: 7px;
+    right: 6px;
   }
   .nav-avatar {
     right: -35px;
@@ -523,6 +510,17 @@ i.fa:hover {
   .nav>li>a {
     padding: 10px 10px;
   }
+  .dropdown {
+    display: inline-block;
+    width: 130px;
+  }
+  .logged-in-user {
+    display: inline;
+    position: absolute;
+    top: 8px;
+    right: -10px;
+  }
+
 
   /*--- Cards ---*/
 
@@ -548,6 +546,7 @@ i.fa:hover {
     display: inline-block;
     padding: 0px;
     margin-top: 0px;
+    margin-left: 20px;
   }
   input#nav-search {
     background-color: rgba(0,0,0, 0.08);
@@ -586,6 +585,41 @@ i.fa:hover {
     top: 30px;
     padding-left: 8px;
   }
+   ul.nav.navbar-nav.navbar-right {
+    width: 250px;
+  }
+  .logged-in-user {
+    position: absolute;
+    top: 8px;
+    right: -15px;
+  }
+  .user-name {
+    top: 5px;
+    position: absolute;
+    right: 30px;
+  }
+  .dropdown-menu {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 160px;
+      padding: 5px 0;
+      margin: 2px 0 0;
+      font-size: 14px;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid #ccc;
+      border: none!important;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  }
 
 }
 @media (min-width: 1100px) {
@@ -609,8 +643,15 @@ i.fa:hover {
   .unread-indicator {
     right: 10px;
   }
+  .navbar-form {
+    margin-left: 50px;
+  }
 }
-
+@media (min-width: 1366px) {
+   .navbar-form {
+    margin-left: 110px;
+  }
+}
 @media (min-width: 1440px) {
 	
 }
