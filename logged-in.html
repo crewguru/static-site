@@ -45,9 +45,9 @@
 
   </head>
   <body class="body">
-    <div class="hero logged-in clearfix">
+    <div class="logged-in clearfix">
       <nav class="navbar navbar-default">
-        <div class="container-fluid container-header-outer">
+        <div class="container-fluid main-nav">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -57,7 +57,7 @@
               <span class="icon-bar"></span>
             </button>
             <!-- <a class="navbar-brand" href="#">Brand</a> -->
-            <a class="logo" href="#"><img height="42" src="images/crewguru-beta.svg"></a>
+            <a class="logo" href="#"><img height="33" src="images/Logos/CrewGuru_Logo@2x.png"></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,27 +66,11 @@
               <li><a class="header-link" href="#">Crew</a></li>
               <li><a class="header-link" href="#">Service Companies</a></li>
               <li><a class="header-link" href="#">Jobs</a></li>
-              <li><a class="header-link" href="#">Blog</a></li>
+              <li><a class="header-link" href="#">Blog</a></li>             
             </ul>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-
-                <input id="nav-search" class="container-search form-control" data-ix="tap-on-search" data-name="Search" id="Search" maxlength="256" name="Search" type="text"><img class="icon-search" height="16" src="images/icon-nav-search.png">
-              </div>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a class="header-link-icon" data-ix="hide-unread-notification" href="#"><i class="fa fa-suitcase"></i>
-                  <div class="unread-indicator">
-                    <span class="unread-number">1</span>
-                  </div>
-                </a>
-              </li>
+            <ul class="nav navbar-nav navbar-right">            
               <li>
                 <a class="header-link-icon" data-ix="hide-unread-notification" href="#"><i class="fa fa-envelope"></i>
-                  <div class="unread-indicator">
-                    <div class="unread-number">7</div>
-                  </div>
                 </a>
               </li>
               <li>
@@ -96,26 +80,26 @@
                   </div>
                 </a>  
               </li>
-              <li>
-                <a class="header-link-icon" data-ix="hide-unread-notification" href="#"><i class="fa fa-folder"></i>
-                  <div class="unread-indicator">
-                    <div class="unread-number">99+</div>
-                  </div>
-                </a>  
-              </li>
-              <li>
-                <a class="header-link-icon" data-ix="hide-unread-notification" href="#"><i class="fa fa-calendar"></i>
-                  <div class="unread-indicator">
-                    <div class="unread-number">2</div>
-                  </div>
-                </a>
-              </li>
-              <li style="height: 40px;">
-                <a class="header-link-icon" href="#">
-                  <div class="nav-avatar"></div>
-                </a>
-              </li>
+            <div class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle header-link-icon"><span class="header-link-icon user-name">Olivia Todd <span class="block profile-type">Premium Account</span></span> <img src="images/crew/12.png" alt="" width="28" class="logged-in-user"></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Folders</a></li>
+                    <li><a href="#">My Jobs</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">&nbsp;</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
             </ul>
+            <form class="navbar-form">
+              <div class="form-group">
+
+                <input id="nav-search" class="container-search form-control" data-ix="tap-on-search" data-name="Search" id="Search" maxlength="256" name="Search" type="text"><i class="nav-search fa fa-search" ></i>
+              </div>
+            </form>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
