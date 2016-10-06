@@ -246,6 +246,12 @@ i.fa:hover {
   border-radius: 6px;
   background-color: #ef6166;
 }
+
+/*----- Crew-Search-Header -----*/
+.crew-search-form {
+  margin-top: 40px;
+}
+
 /*----- Section Headers -----*/
 .container-section-header {
   display: -webkit-box;
