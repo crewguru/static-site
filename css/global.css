@@ -251,6 +251,12 @@ i.fa:hover {
 .crew-search-form {
   margin-top: 40px;
 }
+.crew-input-field {
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.35);
+  border-color: transparent;
+}
+
 
 /*----- Section Headers -----*/
 .container-section-header {
@@ -551,7 +557,7 @@ i.fa:hover {
     top: 8px;
     right: -10px;
   }
-
+ 
 
   /*--- Cards ---*/
 
@@ -651,6 +657,19 @@ i.fa:hover {
       -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
       box-shadow: 0 6px 12px rgba(0,0,0,.175);
   }
+   input#crew-input-1 {
+
+    }
+    input#crew-input-2 {
+      margin-left: -20px;
+      width: 300px;
+    }
+    input#crew-input-3 {
+      margin-left: 60px;
+    }
+    input#crew-input-4 {
+      margin-left: -10px;
+    }
 
 }
 @media (min-width: 1100px) {
