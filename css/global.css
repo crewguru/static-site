@@ -253,59 +253,88 @@ i.fa:hover {
   background-color: rgba(0,0,0,0.35);
   border-color: transparent;
 }
-
+.purple {
+  font-weight: 900;
+  color: #5d46cc;
+}
+.deep-blue {
+  font-weight: 900;
+  color: #0030FF;
+}
+.aqua {
+  font-weight: 900;
+  color: #09DBC8;
+}
+.light-blue {
+  font-weight: 900;
+  color: #20A8F1;
+}
 
 /*----- Section Headers -----*/
 .container-section-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-bottom: 30px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display:  none;
 }
 .text-section-header {
   display: inline-block;
   font-family: 'Proxima Nova', sans-serif;
-  font-size: 12px;
+  font-size: 26px;
   line-height: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 100;
   margin-top: 2px;
 }
-.section-header-divider {
-  width: 24px;
-  height: 3px;
-  margin-right: 10px;
-  background-color: #5d46cc;
+.ruler {
+  display: inline-block;
+  min-width: 60px;
+  height: 2px;
+  background-color: #E1DFDF;
+  border-radius: 8px;
+  margin: 0px 5px;
+}
+.mercury {
+  font-family: "MercuryTextG2-Bold";
+}
+.small-header-italic {
+  color: #9E9E9E;
+  font-size: 12px;
+  font-family: 'MercuryTextG2';
+  font-weight: 300;
+}
+.inline-paragraph {
+  font-family: 'Proxima-Nova';
+  font-size: 12px;
+  color: #6F6F6F;
+  font-weight: 300;
+}
+span.fa.fa-th-list {
+  background-color: white;
+  color: grey;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin: 0px 10px;
+}
+span.fa.fa-th-list {
+  background-color: white;
+  color: #eeeeee;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin: 10px 0px 10px 0px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+}
+span.fa.fa-th-large {
+  background-color: #E5E5E5;
+  color: grey;
+  padding: 6px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+}
+span.fa.fa-th-list:active, span.fa.fa-th-large:active {
+  background-color: #E5E5E5;
+  color: grey;
 }
 
 /*----- Crew-search -----*/
 .crew-search {
-  height: 120px;
-  position: absolute;
-  width: 100%;
-  top: 81px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 0px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-image: -webkit-radial-gradient(circle farthest-corner at 100% 100%, rgba(53, 212, 204, .8), rgba(108, 73, 213, .8)), url(../images/header.png);
-  background-image: radial-gradient(circle farthest-corner at 100% 100%, rgba(53, 212, 204, .8), rgba(108, 73, 213, .8)), url(../images/header.png);
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
-  text-align: center;
+  display:none;
 }
 span.fake-placeholder {
   font-size: 12px;
@@ -728,6 +757,44 @@ span.caret {
     }
     i.fa.crew-search-icon-4 {
       left: 45px;
+    }
+    .dropdown-menu.crew-dropdown {
+      top: 32px;
+      left: 100px;
+    }
+    .container-section-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin: 60px 0px 40px 0px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .crew-search {
+      height: 120px;
+      position: absolute;
+      width: 100%;
+      top: 81px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 0px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-image: -webkit-radial-gradient(circle farthest-corner at 100% 100%, rgba(53, 212, 204, .8), rgba(108, 73, 213, .8)), url(../images/header.png);
+      background-image: radial-gradient(circle farthest-corner at 100% 100%, rgba(53, 212, 204, .8), rgba(108, 73, 213, .8)), url(../images/header.png);
+      background-position: 0px 0px, 50% 50%;
+      background-size: auto, cover;
+      background-repeat: repeat, no-repeat;
+      text-align: center;
     }
 
 }
