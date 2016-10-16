@@ -79,6 +79,7 @@
   font-weight: 500;
   text-align: left;
 }
+
 .hero {
   display: -webkit-box;
   display: -webkit-flex;
@@ -244,6 +245,54 @@ i.fa:hover {
   background-color: #ef6166;
 }
 
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-height: 200px;
+  background-color: #ffffff;
+}
+
+.footer-links {
+  padding: 40px 0px 30px 0px;
+}
+
+li.footer-link {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.social-icons {
+  padding-bottom: 40px;
+}
+li.social-icon {
+  list-style-type: none;
+}
+img.footer-logo-img {
+  padding-bottom: 30px;
+}
+
+p.copyright {
+  padding-bottom: 30px;
+  font-size: 12px;
+}
+
+li>a.footer-nav{
+  font-size: 10px;
+  text-align: left;
+  color: #6D6A7F;
+  background-position: 50% 100%;
+  background-size: 0% 4px;
+  background-repeat: no-repeat;
+  transition: all 0.3s linear;
+  background-image: -webkit-linear-gradient(left, #6C49D5, #358FD4);  
+  background-image: linear-gradient(to right, #6C49D5, #358FD4);
+}
+li>a.footer-nav:hover {
+  padding-bottom: 8px;
+  color: #6D6A7F;
+  background-size: 100% 4px;
+}
+
 /*----- Crew-Search-Header -----*/
 .crew-search-form {
   margin-top: 40px;
@@ -405,8 +454,8 @@ span.caret {
 
 /*----- Cards -----*/
 .container-listing {
-  padding-top: 100px;
-  padding-bottom: 120px;      
+  padding-top: 100px;  
+  padding-bottom: 60px;  
 }
 .card-container {
   text-align: center;
